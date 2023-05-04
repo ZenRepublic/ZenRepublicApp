@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity XNFT | Zen Republic App<</title>
+    <title>Zen Republic App</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
   </head>
   <body style="text-align: center; padding: 0; border: 0; margin: 0;">
@@ -167,7 +167,7 @@
     var bs58 = base(ALPHABET);
     </script>
     <script src="https://unpkg.com/@solana/web3.js@latest/lib/index.iife.min.js"></script>
-    <script src="Build/Solana.Unity-SDK.loader.js"></script>
+    <script src="Build/xnftbuild.loader.js"></script>
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas" width=960 height=600></canvas>
       <div id="unity-loading-bar">
@@ -210,11 +210,11 @@
       }
       
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/Solana.Unity-SDK.loader.js";
+      var loaderUrl = buildUrl + "/xnftbuild.loader.js";
       var config = {
-        dataUrl: "Build/ForeseeBuild.data",
-        frameworkUrl: "Build/ForeseeBuild.framework.js",
-        codeUrl: "Build/ForeseeBuild.wasm",
+        dataUrl: "Build/xnftbuild.data",
+        frameworkUrl: "Build/xnftbuild.framework.js",
+        codeUrl: "Build/xnftbuild.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Zen Republic",
         productName: "Zen Republic App",
